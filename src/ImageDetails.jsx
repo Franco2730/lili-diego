@@ -20,7 +20,7 @@ const ImageDetails = () => {
     { src: '/juegoExterior.jpg', name: 'Juego de exterior', summary: 'Conjunto de muebles de jardín, incluye sillas y mesa. Ideal para disfrutar del aire libre con comodidad y estilo.', price: '$220.000' },
     { src: '/led.jpg', name: 'Led Samsung 32 pulgadas', summary: 'Disfruta de tus programas y películas favoritas con esta pantalla LED Samsung de 32 pulgadas, que ofrece una calidad de imagen excepcional y un diseño elegante.', price: '$70.000' },
     { src: '/llavero.jpg', name: 'Llavero de madera', summary: 'Llavero artesanal hecho de madera, resistente y con un diseño único. Ideal para mantener tus llaves organizadas con estilo.', price: '$6.000' },
-    { src: '/mesa.jpg', name: 'Mesa de cocina', summary: 'Mesa de cocina, perfecta para organizar todos los utensilios de la mujer . Con un diseño sencillo y funcional, ideal para cualquier estilo de decoración.', price: '$40.000' },
+    { src: '/mesa.jpg', name: 'Mesa de cocina', summary: 'Mesa de cocina, perfecta para organizar todos los utensilios. Con un diseño sencillo y funcional, ideal para cualquier estilo de decoración.', price: '$40.000' },
     { src: '/mesaRatona.jpg', name: 'Mesa ratona moderna', summary: 'Mesa ratona de madera, perfecta para el salón. Con un diseño sencillo y funcional, ideal para cualquier estilo de decoración.', price: '$40.000' },
     { src: '/mesaRatona2.jpg', name: 'Mesa ratona', summary: 'Mesa ratona con superficie de vidrio y estructura de madera. Elegante y moderna, perfecta para el salón.', price: '$40.000' },
     { src: '/palo.jpg', name: 'Palo de Hockey', summary: 'Palo de Hockey en excelente estado - Mercian - 90% carbono.', price: '$190.000' },
