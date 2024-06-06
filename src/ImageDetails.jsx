@@ -8,7 +8,8 @@ const ImageDetails = () => {
   const navigate = useNavigate();
 
   const products = [
-    { src: '/bowls.jpg', name: 'Set de bowls de cerámica', summary: 'Hermoso set de bowls chicos ideal para postres.', price: '  $15.000' },
+    { src: './bowls.jpg', name: 'Set de bowls de cerámica', summary: 'Hermoso set de bowls chicos ideal para postres.', price: '  $15.000' },
+
     { src: '/cafetera.jpg', name: 'Cafetera PEABODY', summary: 'Cafetera moderna, perfecta para preparar tu café favorito cada mañana.', price: '$130.000' },
     { src: '/canasto.jpg', name: 'Canasto de ropa plegable', summary: 'Canasto plegable para ropa, práctico y funcional.', price: '$25.000' },
     { src: '/fuente.jpg', name: 'Fuente de vidrio', summary: 'Fuente decorativa de vidrio, ideal para servir ensaladas o como pieza central en tu mesa.', price: '$12.000' },
