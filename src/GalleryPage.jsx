@@ -7,7 +7,7 @@ const GalleryPage = () => {
   const navigate = useNavigate();
 
   const products = [
-    { src: '/bowls.jpg', name: 'Set 4 bowls chicos.' },
+    { src: './bowls.jpg', name: 'Set 4 bowls chicos.' },
     { src: '/cafetera.jpg', name: 'Cafetera PEABODY.' },
     { src: '/canasto.jpg', name: 'Canasto de ropa plegable.' },
     { src: '/fuente.jpg', name: 'Fuente de vidrio.' },
