@@ -1,0 +1,102 @@
+/* src/LandingPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* Estilo global para eliminar padding y margen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 123, 255, 0.1);;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Fija la navbar en la parte superior */
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-button {
+  margin: 0 20px;
+  padding: 5px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4e99e9;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Aplicar la fuente a los botones */
+}
+
+.nav-button:hover {
+  background-color: #054dd3;
+}
+
+/* Estilo para el contenedor principal */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Evita el scroll */
+  text-align: center;
+  background-color: #a6ebfc; /* Color de fondo claro */
+  padding-top: 60px; /* Ajusta este valor para dar espacio a la navbar fija */
+}
+
+/* Estilo para el contenedor de la imagen */
+.image-container {
+  position: relative; /* Permite posicionar elementos hijos absolutamente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo para la imagen */
+.landing-image {
+  max-width: 80%;
+  max-height: 80%;
+  height: auto;
+  width: auto;
+  margin: 0; /* Asegura que no haya margen */
+  padding: 0; /* Asegura que no haya padding */
+}
+
+/* Estilo para el botón */
+.landing-button {
+  position: absolute; /* Posiciona el botón absolutamente dentro del contenedor */
+  top: 57%; /* Cambia esta línea para ajustar la coordenada Y */
+  left: 61%; /* Cambia esta línea para ajustar la coordenada X */
+  transform: translate(-50%, -50%); /* Centra el botón */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4e99e9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.landing-button:hover {
+  background-color: #054dd3;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .landing-button {
+    top: 54%; /* Cambia esta línea para ajustar la coordenada Y */
+    left: 78%;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

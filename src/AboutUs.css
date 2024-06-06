@@ -1,0 +1,108 @@
+/* src/AboutUs.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;600&display=swap');
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Lora', serif;
+}
+
+.about-us-container::before, .about-us-container::after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.about-us-container::before {
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.about-us-container::after {
+  bottom: -100px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.about-us-container .circle1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.about-us-container .circle2 {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.about-us-container .circle3 {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.about-us-container h1 {
+  font-size: 36px;
+  color: #333;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif; /* Fuente bonita y profesional */
+}
+
+.about-us-container p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  line-height: 1.6;
+  z-index: 1;
+  font-family: 'Lora', serif; /* Fuente cálida y tierna */
+}
+
+.back-circle {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Aplicar la fuente a los botones */
+}
+
+.back-circle:hover {
+  background: rgba(0, 123, 255, 0.3);
+}

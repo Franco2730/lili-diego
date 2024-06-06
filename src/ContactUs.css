@@ -1,0 +1,162 @@
+/* src/ContactUs.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;600&display=swap');
+
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Lora', serif;
+}
+
+.contact-us-container::before, .contact-us-container::after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.contact-us-container::before {
+  top: -100px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.contact-us-container::after {
+  bottom: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.contact-us-container .circle1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.contact-us-container .circle2 {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.contact-us-container .circle3 {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.contact-us-container h1 {
+  font-size: 36px;
+  color: #333;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif; /* Fuente bonita y profesional */
+}
+
+.contact-us-container h2 {
+  font-size: 24px;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Fuente bonita y profesional */
+}
+
+.contact-us-container p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  line-height: 1.6;
+  z-index: 1;
+  font-family: 'Lora', serif; /* Fuente cálida y tierna */
+}
+
+.contact-us-container a {
+  font-family: 'Poppins', sans-serif; /* Fuente bonita y profesional */
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  z-index: 1;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.contact-card h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-card a:hover {
+  background-color: #0056b3;
+}
+
+.back-circle {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Aplicar la fuente a los botones */
+}
+
+.back-circle:hover {
+  background: rgba(0, 123, 255, 0.3);
+}

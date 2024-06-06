@@ -1,0 +1,120 @@
+/* src/GalleryPage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Lora', serif;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #b4ffff;
+}
+
+.gallery-container h1 {
+  font-size: 36px;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Fuente bonita y profesional */
+}
+
+.images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .images-grid {
+    gap: 10px;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  width: 200px;
+  background-color: #fff;
+  border: 2px solid #b4ffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Fuente bonita y profesional */
+}
+
+.info-button {
+  margin-top: auto; /* Empuja el botón hacia el final de la carta */
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Aplicar la fuente a los botones */
+}
+
+.info-button:hover {
+  background-color: #0056b3;
+}
+
+.back-circle {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Aplicar la fuente a los botones */
+}
+
+.back-circle:hover {
+  background: rgba(0, 123, 255, 0.3);
+}
