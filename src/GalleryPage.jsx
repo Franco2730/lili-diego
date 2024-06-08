@@ -17,6 +17,7 @@ const GalleryPage = () => {
     { src: '/heladeraBambi.jpg', name: 'Heladera Bambi.' },
     { src: '/juegoExterior.jpg', name: 'Juego de exterior.' },
     { src: '/led.jpg', name: 'Led Samsung 32 pulgadas.' },
+    { src: '/tv.jpg', name: 'Smart tv LG.' },
     { src: '/llavero.jpg', name: 'Llavero de madera' },
     { src: '/mesa.jpg', name: 'Mueble para cocina.' },
     { src: '/mesaRatona.jpg', name: 'Mesa ratona de madera.' },
@@ -29,6 +30,7 @@ const GalleryPage = () => {
     { src: '/velas.jpg', name: 'Velas decorativas.' },
     { src: '/velas2.jpg', name: 'Velas decorativas.' },
     { src: '/fondue.jpg', name: 'Juego de Fondue.' },
+    { src: '/lampara.jpg', name: 'Lampara vintage', sold: true }
   ];
 
   const handleMoreInfoClick = (index) => {
@@ -42,13 +44,16 @@ const GalleryPage = () => {
   return (
     <div className="gallery-container">
       <h1>Nuestras cositas...</h1>
+        <br/>
       <div className="images-grid">
         {products.map((product, index) => (
-          <div key={index} className="image-wrapper">
+          <div key={index} className={`image-wrapper ${product.sold ? 'sold-out' : ''}`}>
             <img src={product.src} alt={product.name} className="gallery-image" />
             <div className="card-content">
               <h3>{product.name}</h3>
-              <button className="info-button" onClick={() => handleMoreInfoClick(index)}>Más Info</button>
+              {!product.sold && (
+                <button className="info-button" onClick={() => handleMoreInfoClick(index)}>Más Info</button>
+              )}
             </div>
           </div>
         ))}
