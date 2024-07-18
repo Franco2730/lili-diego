@@ -19,16 +19,9 @@ const ContactUs = () => {
         <br/>
       <div className="contact-cards">
         <div className="contact-card">
-          <h2>Emilia</h2>
+          <h2>Franco</h2>
           <p>Puedes contactarme en WhatsApp:</p>
-          <a href="https://wa.me/5492613617523" target="_blank" rel="noopener noreferrer">
-            Enviar mensaje
-          </a>
-        </div>
-        <div className="contact-card">
-          <h2>Diego</h2>
-          <p>Puedes contactarme en WhatsApp:</p>
-          <a href="https://wa.me/5492634558619" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/5492615681142" target="_blank" rel="noopener noreferrer">
             Enviar mensaje
           </a>
         </div>
